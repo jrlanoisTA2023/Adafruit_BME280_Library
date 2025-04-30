@@ -132,8 +132,6 @@ bool Adafruit_BME280::init() {
 /*!
  *   @brief  setup sensor with given parameters / settings
  *
- *   This is simply a overload to the normal begin()-function, so SPI users
- *   don't get confused about the library requiring an address.
  *   @param mode the power mode to use for the sensor
  *   @param tempSampling the temp samping rate to use
  *   @param pressSampling the pressure sampling rate to use
