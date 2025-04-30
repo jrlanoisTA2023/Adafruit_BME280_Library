@@ -334,7 +334,7 @@ bool Adafruit_BME280::isReadingCalibration(void) {
 
 /*!
  *   @brief  Returns the temperature from the sensor
- *   @returns the temperature read from the device
+ *   @returns the temperature read from the device or NaN if sampling off
  */
 float Adafruit_BME280::readTemperature(void) {
   int32_t var1, var2;
@@ -358,7 +358,7 @@ float Adafruit_BME280::readTemperature(void) {
 
 /*!
  *   @brief  Returns the pressure from the sensor
- *   @returns the pressure value (in Pascal) read from the device
+ *   @returns the pressure value (in Pascal) or NaN if sampling off
  */
 float Adafruit_BME280::readPressure(void) {
   int64_t var1, var2, var3, var4;
@@ -397,7 +397,7 @@ float Adafruit_BME280::readPressure(void) {
 
 /*!
  *  @brief  Returns the humidity from the sensor
- *  @returns the humidity value read from the device
+ *  @returns the humidity value read from the device or NaN if sampling off
  */
 float Adafruit_BME280::readHumidity(void) {
   int32_t var1, var2, var3, var4, var5;
