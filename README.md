@@ -1,3 +1,7 @@
+# Fork Specific Changes
+
+Cut the startup delays because they were found to be not needed for my application. Changes are made in Adafruit_BME280.cpp.
+
 # Adafruit BME280 Library [![Build Status](https://github.com/adafruit/Adafruit_BME280_Library/workflows/Arduino%20Library%20CI/badge.svg)](https://github.com/adafruit/Adafruit_BME280_Library/actions)[![Documentation](https://github.com/adafruit/ci-arduino/blob/master/assets/doxygen_badge.svg)](http://adafruit.github.io/Adafruit_BME280_Library/html/index.html)
 
 
