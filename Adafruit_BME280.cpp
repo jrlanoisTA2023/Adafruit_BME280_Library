@@ -114,17 +114,17 @@ bool Adafruit_BME280::init() {
   write8(BME280_REGISTER_SOFTRESET, 0xB6);
 
   // wait for chip to wake up.
-  delay(10);
+  delay(1);
 
   // if chip is still reading calibration, delay
   while (isReadingCalibration())
-    delay(10);
+    delay(1);
 
   readCoefficients(); // read trimming parameters, see DS 4.2.2
 
-  setSampling(); // use defaults
+  // setSampling(); // use defaults
 
-  delay(100);
+  // delay(100);
 
   return true;
 }
